@@ -12,14 +12,21 @@
 						{% if page.subTitle2 %}
 						<h4>{{ page.subTitle2 }}</h4>
 						{% endif %}
-						<hr class="intro-divider">
-						<ul class="list-inline intro-social-buttons">
-							{% for social in site.social %}
-							<li>
-								<a href="{{ social.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ social.title }} fa-fw"></i> <span class="network-name">{{ social.title }}</span></a>
-							</li>
-							{% endfor %}
-						</ul>
+						<div class="intro-cta">
+							<form class="email-signup-form">
+								<div class="email-input-group">
+									<input type="email" class="email-input" placeholder="Enter your email address" required>
+									<button type="submit" class="cta-button">Get Early Access</button>
+								</div>
+								<div style="color: #ffffff !important; text-align: center; font-size: 0.85em !important; font-weight: 300 !important; margin-top: 12px; letter-spacing: 0.5px; padding: 2px;">Free during beta - no card required</div>
+							</form>
+						</div>
+						<div class="scroll-indicator">
+							<span class="scroll-text">Scroll for more</span>
+							<div class="scroll-arrow">
+								<i class="fa fa-chevron-down"></i>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
