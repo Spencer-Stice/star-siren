@@ -31,7 +31,7 @@ h6 {
     padding-bottom: 80px;
     text-align: center;
     color: #f8f8f8;
-    background: linear-gradient(145deg, #000000 0%, #7f2504 100%);
+    background: linear-gradient(145deg, #000000 0%, #350707 70%, #7f2504 100%);
     background-size: cover;
     min-height: 100vh;
     display: flex;
@@ -47,7 +47,7 @@ h6 {
 
 .intro-message > h1 {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: -15px;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
     font-size: 6em;
     font-weight: 700;
@@ -114,7 +114,7 @@ h6 {
 }
 
 .email-input::placeholder {
-    color: #666;
+    color: #333;
     font-weight: 400;
 }
 
@@ -219,15 +219,24 @@ span.beta-disclaimer {
         margin-bottom: 15px;
         text-align: center;
         border-radius: 25px;
-        background: rgba(255, 255, 255, 0.1);
-        color: white;
+        background: rgba(255, 255, 255, 0.95);
+        color: #333;
     }
 
     .email-input::placeholder {
-        color: rgba(255, 255, 255, 0.7);
+        color: #444 !important;
+        font-weight: 400;
     }
 
-    .email-input-group .btn {
+    .email-signup-form .email-input::placeholder,
+    .intro-cta .email-input::placeholder,
+    input[type="email"]::placeholder {
+        color: #222 !important;
+        font-weight: 400 !important;
+    }
+
+    .email-input-group .btn,
+    .email-input-group .cta-button {
         padding: 15px 25px;
         font-size: 1em;
         letter-spacing: 0.5px;
@@ -331,4 +340,32 @@ footer {
 
 p.copyright {
     margin: 15px 0 0;
+}
+
+/* Mobile placeholder fix - MUST BE LAST */
+@media(max-width:767px) {
+    .email-input::-webkit-input-placeholder {
+        color: #222 !important;
+    }
+    .email-input::-moz-placeholder {
+        color: #222 !important;
+    }
+    .email-input:-ms-input-placeholder {
+        color: #222 !important;
+    }
+    .email-input::placeholder {
+        color: #222 !important;
+    }
+    input[type="email"]::-webkit-input-placeholder {
+        color: #222 !important;
+    }
+    input[type="email"]::-moz-placeholder {
+        color: #222 !important;
+    }
+    input[type="email"]:-ms-input-placeholder {
+        color: #222 !important;
+    }
+    input[type="email"]::placeholder {
+        color: #222 !important;
+    }
 }
