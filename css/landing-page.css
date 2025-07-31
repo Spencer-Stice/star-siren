@@ -102,11 +102,12 @@ h6 {
 
 .email-input {
     flex: 1;
-    border: none;
-    outline: none;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
     padding: 15px 30px;
     font-size: 1.1em;
-    background: transparent;
+    background: transparent !important;
     color: #333;
     font-weight: 500;
     margin-right: 10px;
@@ -219,8 +220,11 @@ span.beta-disclaimer {
         margin-bottom: 15px;
         text-align: center;
         border-radius: 25px;
-        background: rgba(255, 255, 255, 0.95);
+        background: rgba(255, 255, 255, 0.95) !important;
         color: #333;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
     }
 
     .email-input::placeholder {
