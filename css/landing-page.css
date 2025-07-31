@@ -647,8 +647,54 @@ footer {
     background-color: #f8f8f8;
 }
 
+.footer-content {
+    margin: 0 auto;
+}
+
 p.copyright {
-    margin: 15px 0 0;
+    margin: 15px 0 10px;
+    font-size: 14px;
+}
+
+.footer-links {
+    margin-top: 15px;
+}
+
+.footer-link {
+    color: #777;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #428bca;
+    text-decoration: none;
+}
+
+.footer-divider {
+    margin: 0 15px;
+    color: #ccc;
+}
+
+.support-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #428bca;
+    color: white !important;
+    border-radius: 4px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.support-btn:hover {
+    background-color: #357abd;
+    color: white !important;
+    text-decoration: none;
+}
+
+.support-btn i {
+    margin-right: 5px;
 }
 
 /* Mobile placeholder fix - MUST BE LAST */

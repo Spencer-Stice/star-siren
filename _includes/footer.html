@@ -2,28 +2,19 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
-                <ul class="list-inline">
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <p class="copyright text-muted small">{{ site.copyright }}</p>
-            </div>
-            <div class="col-md-4">
-                {{ site.credits }}
+            <div class="col-md-12 text-center">
+                <div class="footer-content">
+                    <p class="copyright text-muted small">
+                        &copy; {{ site.time | date: "%Y" }} StarSiren. All rights reserved.
+                    </p>
+                    <div class="footer-links">
+                        <a href="https://www.freeprivacypolicy.com/live/52a8e2c0-bbc6-454f-a696-d5ee33f9df31" target="_blank" class="footer-link">Privacy Policy</a>
+                        <span class="footer-divider">|</span>
+                        <a href="mailto:support@star-siren.com" class="footer-link support-btn">
+                            <i class="fa fa-envelope"></i> Support
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
