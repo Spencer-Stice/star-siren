@@ -29,3 +29,28 @@ $('div.modal').on('show.bs.modal', function() {
 		}
 	}
 });
+
+// Subtle scroll animations
+$(document).ready(function() {
+    function checkScroll() {
+        var scrollTop = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        
+        $('.animate-item').each(function(index) {
+            var elementTop = $(this).offset().top;
+            if (scrollTop + windowHeight > elementTop + 100) {
+                var $this = $(this);
+                // Add delay for staggered animation
+                setTimeout(function() {
+                    $this.addClass('visible');
+                }, index * 150);
+            }
+        });
+    }
+    
+    // Check on scroll
+    $(window).scroll(checkScroll);
+    
+    // Check on load
+    checkScroll();
+});
