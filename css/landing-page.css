@@ -40,9 +40,16 @@ h6 {
 
 .intro-message {
     position: relative;
-    padding-top: 5%;
+    padding-top: 3%;
     padding-bottom: 5%;
     width: 100%;
+}
+
+.intro-message .logo {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 25px;
+    filter: drop-shadow(0 0 15px #ff4444) drop-shadow(0 0 25px #cc0000) drop-shadow(2px 2px 8px rgba(0,0,0,0.6));
 }
 
 .intro-message > h1 {
@@ -196,8 +203,13 @@ span.beta-disclaimer {
 
 @media(max-width:767px) {
     .intro-message {
-        padding-top: 10%;
+        padding-top: 7%;
         padding-bottom: 5%;
+    }
+
+    .intro-message .logo {
+        max-width: 80px;
+        margin-bottom: 20px;
     }
 
     .intro-message > h1 {
