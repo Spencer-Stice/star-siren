@@ -92,6 +92,45 @@ h6 {
     margin-bottom: 80px;
 }
 
+.alert-prompt {
+    text-align: center;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.yes-button {
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 20px 40px;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 30px rgba(255, 107, 53, 0.5);
+    cursor: pointer;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.yes-button:hover {
+    background: linear-gradient(135deg, #e55a2b 0%, #e8851d 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(255, 107, 53, 0.7);
+}
+
+.email-signup-form-container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.email-signup-form-container.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .email-signup-form {
     max-width: 600px;
     margin: 0 auto;
@@ -261,6 +300,12 @@ span.beta-disclaimer {
 
     .intro-cta {
         margin-bottom: 60px;
+    }
+
+    .yes-button {
+        padding: 18px 35px;
+        font-size: 1.1em;
+        letter-spacing: 0.5px;
     }
 
     .scroll-indicator {
