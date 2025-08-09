@@ -1,3 +1,43 @@
+// Function to show email form when "Yes" button is clicked
+function showEmailForm() {
+    var alertPrompt = document.getElementById('alertPrompt');
+    var emailFormContainer = document.getElementById('emailFormContainer');
+    
+    // Hide the yes button with fade out
+    alertPrompt.style.opacity = '0';
+    alertPrompt.style.transform = 'translateY(-20px)';
+    
+    setTimeout(function() {
+        alertPrompt.style.display = 'none';
+        emailFormContainer.style.display = 'block';
+        
+        // Trigger the animation
+        setTimeout(function() {
+            emailFormContainer.classList.add('show');
+        }, 50);
+    }, 300);
+}
+
+// Function to show email form for bottom CTA
+function showEmailFormBottom() {
+    var alertPrompt = document.getElementById('alertPromptBottom');
+    var emailFormContainer = document.getElementById('emailFormContainerBottom');
+    
+    // Hide the yes button with fade out
+    alertPrompt.style.opacity = '0';
+    alertPrompt.style.transform = 'translateY(-20px)';
+    
+    setTimeout(function() {
+        alertPrompt.style.display = 'none';
+        emailFormContainer.style.display = 'block';
+        
+        // Trigger the animation
+        setTimeout(function() {
+            emailFormContainer.classList.add('show');
+        }, 50);
+    }, 300);
+}
+
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
