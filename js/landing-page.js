@@ -1,10 +1,16 @@
 // Function to show email form when "Yes" button is clicked
 function showEmailForm() {
     // Track button click in Google Analytics
-    gtag('event', 'click', {
-        'event_category': 'engagement',
-        'event_label': 'join_beta_button_header'
-    });
+    if (typeof gtag !== 'undefined') {
+        try {
+            gtag('event', 'join_beta_button_click', {
+                'event_category': 'engagement',
+                'event_label': 'header_button'
+            });
+        } catch (e) {
+            console.log('Analytics tracking failed:', e);
+        }
+    }
     
     var alertPrompt = document.getElementById('alertPrompt');
     var emailFormContainer = document.getElementById('emailFormContainer');
@@ -27,10 +33,16 @@ function showEmailForm() {
 // Function to show email form for bottom CTA
 function showEmailFormBottom() {
     // Track button click in Google Analytics
-    gtag('event', 'click', {
-        'event_category': 'engagement',
-        'event_label': 'join_beta_button_bottom'
-    });
+    if (typeof gtag !== 'undefined') {
+        try {
+            gtag('event', 'join_beta_button_click', {
+                'event_category': 'engagement',
+                'event_label': 'bottom_button'
+            });
+        } catch (e) {
+            console.log('Analytics tracking failed:', e);
+        }
+    }
     
     var alertPrompt = document.getElementById('alertPromptBottom');
     var emailFormContainer = document.getElementById('emailFormContainerBottom');
